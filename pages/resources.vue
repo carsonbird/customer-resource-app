@@ -70,14 +70,15 @@
 
 <script>
 export default {
-  async asyncData({$content}) {
-    const resources = await $content("resources").fetch();
-    return {
-      resources
-    }
-  },
+  // async asyncData({$content}) {
+  //   const resources = await $content("resources").fetch();
+  //   return {
+  //     resources
+  //   }
+  // },
   data() {
     return {
+      resources: null,
       // UI
       dialog: false,
       dialogItem: null,
@@ -91,8 +92,9 @@ export default {
       this.dialog = true;
     }
   },
-  beforeCreate() {
+  async beforeCreate() {
     this.$store.dispatch("ui/appbar/setTitle", "Resources");
+    this.resources = await this.$content("resources").fetch();
   }
 }
 </script>

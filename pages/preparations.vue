@@ -54,14 +54,15 @@
 
 <script>
 export default {
-  async asyncData({$content}) {
-    const preparations = await $content("preparations").fetch();
-    return {
-      preparations
-    }
-  },
+  // async asyncData({$content}) {
+  //   const preparations = await $content("preparations").fetch();
+  //   return {
+  //     preparations
+  //   }
+  // },
   data() {
     return {
+      preparations: null,
       // UI
       dialog: false,
       dialogItem: null,
@@ -75,8 +76,9 @@ export default {
       this.dialog = true;
     }
   },
-  beforeCreate() {
+  async beforeCreate() {
     this.$store.dispatch("ui/appbar/setTitle", "Preparations");
+    this.preparations = await this.$content("preparations").fetch();
   }
 }
 </script>
