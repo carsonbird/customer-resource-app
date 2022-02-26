@@ -1,4 +1,4 @@
 ---
-title: Samples
+title: Texts
 image: icon.png
 ---

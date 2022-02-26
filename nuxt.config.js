@@ -22,17 +22,27 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // { rel: 'stylesheet', href: "domarrows.css" }
+    ],
+    script: [
+      // {
+      //   type: 'text/javascript',
+      //   src: 'domarrows.js',
+      //   body: true
+      // }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    // '@/assets/domarrows.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     // { src: "~/plugins/leader-line" },
+    // { src: "~/plugins/domarrows" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

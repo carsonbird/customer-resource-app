@@ -1,4 +1,4 @@
 ---
-title: Samples
+title: Trades
 image: icon.png
 ---

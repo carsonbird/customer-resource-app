@@ -7,8 +7,9 @@
     <!-- :transition="$vuetify.breakpoint.smAndDown ? 'dialog-bottom-transition' : 'dialog-transition'" -->
     <v-card class="background rounded-lg">
       <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title class="text-h6" v-if="item">{{item.title}}</v-list-item-title>
+        <v-list-item-content v-if="item">
+          <v-list-item-title class="text-h6">{{item.title}}</v-list-item-title>
+          <v-list-item-subtitle v-for="next, index in item.to" :key="index">To: {{next}}</v-list-item-subtitle>
         </v-list-item-content>
         <v-list-item-action>
           <v-btn icon @click="dialog=false"><v-icon>mdi-close</v-icon></v-btn>
@@ -36,12 +37,14 @@
       </v-card-actions> -->
     </v-card>
     <template v-slot:activator="{ on, attrs }">
-      <v-card v-bind="attrs" v-on="on" class="mr-3 rounded-lg mb-3">
+      <v-card :id="id" v-bind="attrs" v-on="on" class="mr-3 rounded-lg mb-3">
         <v-list-item>
-          <v-list-item-content>
+          <v-list-item-content v-if="item">
             <!-- <v-list-item-title>{{name}}</v-list-item-title> -->
-            <v-list-item-title v-if="item">{{item.title}}</v-list-item-title>
+            <v-list-item-title>{{item.title}}</v-list-item-title>
+            <!-- <v-list-item-subtitle v-for="next, index in item.to" :key="index">{{next}}<v-icon x-small>mdi-arrow-right</v-icon></v-list-item-subtitle> -->
           </v-list-item-content>
+          <!-- <v-list-item-icon><v-icon small>mdi-arrow-right</v-icon></v-list-item-icon> -->
         </v-list-item>
       </v-card>
     </template>
@@ -75,6 +78,7 @@ export default {
     return {
       item: null,
       dialog: false,
+      id: 1
     }
   },
   // computed: {
@@ -84,6 +88,7 @@ export default {
   // },
   async created() {
     this.item = await this.$content(this.path).fetch();
+    this.id = this.item.slug;
     // console.log(this.item);
     // LeaderLine.setLine(
     //   this.$refs["strangers"],

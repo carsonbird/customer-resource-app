@@ -1,4 +1,4 @@
 ---
-title: Samples
+title: Videos
 image: icon.png
 ---

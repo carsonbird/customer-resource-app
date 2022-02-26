@@ -2,18 +2,10 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-list>
-          <v-list-item link to="preparations">
-            <v-list-item-content>
-              <v-list-item-title>Preparations</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item link to="flow">
-            <v-list-item-content>
-              <v-list-item-title>Flow</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
+        <v-alert prominent type="info">
+          <h3>Welcome to the Customer Resource App!</h3>
+          Feel free to take a look around.
+        </v-alert>
       </v-col>
     </v-row>
   </v-container>

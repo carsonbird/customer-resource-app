@@ -3,7 +3,7 @@
     <v-sheet>
       <v-list-item>
         <v-list-item-icon class="mr-3 my-3">
-          <v-icon large color="primary">mdi-purse-outline</v-icon>
+          <v-icon large color="primary">mdi-shopping-outline</v-icon>
         </v-list-item-icon>
         <v-list-item-content>
           <v-list-item-title class="text-h5 font-weight-medium">
@@ -27,6 +27,19 @@
           <v-list-item-content>
             <v-list-item-title>
               Flow
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
+    </v-list>
+    <v-divider></v-divider>
+    <v-list shaped nav class="pl-0">
+      <v-list-item-group color="primary">
+        <v-list-item link to="/resources">
+          <v-icon right left>mdi-shape</v-icon>
+          <v-list-item-content>
+            <v-list-item-title>
+              Resources
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>

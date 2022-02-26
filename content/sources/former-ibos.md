@@ -1,6 +1,7 @@
 ---
 title: Former IBOs
 to:
-  - conversation
+  - maintain-positive-relationship
+  - convesation-cold
 ---
 

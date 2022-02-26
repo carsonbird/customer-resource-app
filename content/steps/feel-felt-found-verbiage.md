@@ -24,3 +24,5 @@ energy drinks and now I have more energy."
 </blockquote>
 
 The aware individual will likely respond with, "Really? Wow! Where'd you get that? I'd like to try some!", to which you can reply "I totally understand. I (or my spouse and I) actually get them from our own online store."
+
+Take time to <resource-chip path="preparations/verbiage-practice">Practice your verbiage</resource-chip>.

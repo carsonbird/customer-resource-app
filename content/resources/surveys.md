@@ -1,4 +1,4 @@
 ---
-title: Samples
+title: Surveys
 image: icon.png
 ---

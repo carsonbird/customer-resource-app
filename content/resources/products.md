@@ -1,4 +1,4 @@
 ---
-title: Samples
+title: Products
 image: icon.png
 ---

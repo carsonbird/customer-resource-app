@@ -1,4 +1,4 @@
 ---
-title: Samples
+title: Mailers
 image: icon.png
 ---

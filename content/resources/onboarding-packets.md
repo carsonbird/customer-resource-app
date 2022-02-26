@@ -1,4 +1,4 @@
 ---
-title: Samples
+title: Onboarding Packets
 image: icon.png
 ---

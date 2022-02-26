@@ -1,4 +1,4 @@
 ---
-title: Samples
+title: Welcome Cards
 image: icon.png
 ---

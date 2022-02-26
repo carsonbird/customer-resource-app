@@ -1,8 +1,8 @@
 ---
 title: Strangers
 to:
+  - engage-and-listen
   - share-products
-  - identify-need
 ---
 
 Anybody you don't already know, or who hasn't been exposed to this business.

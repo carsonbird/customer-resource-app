@@ -1,27 +1,66 @@
 <template>
   <div class="d-flex overflow-x-auto flex-grow-1 flex-shrink-0 px-0 pb-3">
-    <section-container name="Connection">
+    <section-container name="Sources">
       <info-col>
         <info-row>
           <info-card path="sources/strangers"></info-card>
-          <!-- <info-card path="steps/know-solution-matrices"></info-card> -->
+        </info-row>
+        <info-row>
+          <info-spacer></info-spacer>
+        </info-row>
+        <info-row>
+          <info-card path="sources/sphere-of-influence"></info-card>
+        </info-row>
+        <info-row>
+          <info-spacer></info-spacer>
         </info-row>
         <!-- <info-row>
-          <info-spacer></info-spacer>
+          <info-card path="sources/coworkers"></info-card>
+        </info-row> -->
+        <!-- <info-row>
+          <info-card path="sources/family"></info-card>
         </info-row> -->
         <info-row>
-          <info-spacer></info-spacer>
-          <info-card path="steps/share-products"></info-card>
-          <info-card path="steps/conversation"></info-card>
+          <info-card path="sources/pre-bp-dropouts"></info-card>
         </info-row>
         <info-row>
-          <info-card path="sources/cold-post-bp-dropouts"></info-card>
-        </info-row>
-        <info-row>
-          <info-card path="sources/warm-post-bp-dropouts"></info-card>
+          <info-card path="sources/post-bp-dropouts"></info-card>
         </info-row>
         <info-row>
           <info-card path="sources/former-ibos"></info-card>
+        </info-row>
+        <info-row>
+          <info-card path="sources/businesses"></info-card>
+        </info-row>
+      </info-col>
+    </section-container>
+    <section-container name="Connection">
+      <info-col>
+        <info-row>
+          <info-card path="steps/engage-and-listen"></info-card>
+        </info-row>
+        <info-row>
+          <!-- <info-spacer></info-spacer> -->
+          <info-card path="steps/share-products"></info-card>
+          <info-card path="steps/conversation-soi"></info-card>
+        </info-row>
+        <info-row>
+          <!-- <info-spacer></info-spacer> -->
+          <info-card path="steps/significant-events"></info-card>
+          <info-card path="steps/event-gifts"></info-card>
+          <info-card path="steps/event-gifts-followup"></info-card>
+        </info-row>
+        <info-row>
+          <info-spacer></info-spacer>
+        </info-row>
+        <info-row>
+          <info-card path="steps/conversation-pre-bp"></info-card>
+        </info-row>
+        <info-row>
+          <info-card path="steps/conversation-post-bp"></info-card>
+        </info-row>
+        <info-row>
+          <info-card path="steps/conversation-ibo"></info-card>
         </info-row>
       </info-col>
     </section-container>
@@ -32,6 +71,16 @@
           <info-card path="steps/feel-felt-found-verbiage"></info-card>
           <info-card path="steps/dtm"></info-card>
           <info-card path="steps/contact-info"></info-card>
+          <info-card path="steps/service-preference"></info-card>
+        </info-row>
+        <info-row>
+          <info-spacer></info-spacer>
+        </info-row>
+        <info-row>
+          <info-spacer></info-spacer>
+        </info-row>
+        <info-row>
+          <info-card path="steps/invite-to-support"></info-card>
         </info-row>
       </info-col>
     </section-container>
@@ -52,6 +101,7 @@
           <info-card path="steps/explain-survey"></info-card>
           <info-card path="steps/send-survey-link"></info-card>
           <info-card path="steps/survey-completed"></info-card>
+          <info-card path="steps/thank-for-survey"></info-card>
         </info-row>
         <info-row>
           <info-card path="steps/catalog-samples"></info-card>
@@ -66,9 +116,6 @@
         <info-row>
           <info-card path="steps/send-samples"></info-card>
           <info-card path="steps/wait-x-time"></info-card>
-        </info-row>
-        <info-row>
-          <info-card path="steps/thank-for-survey"></info-card>
         </info-row>
       </info-col>
     </section-container>
