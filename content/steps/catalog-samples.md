@@ -1,5 +1,5 @@
 ---
-title: Catalog and Samples
+title: Catalog & Samples
 to:
   - gift-basket
   # - explain-survey

@@ -54,6 +54,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Preparations"
+    }
+  },
   // async asyncData({$content}) {
   //   const preparations = await $content("preparations").fetch();
   //   return {

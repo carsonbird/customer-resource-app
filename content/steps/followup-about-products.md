@@ -1,5 +1,5 @@
 ---
-title: Follow Up About Samples
+title: Follow Up About Products
 to:
   - invite-to-be-customer
 ---

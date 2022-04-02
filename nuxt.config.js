@@ -12,13 +12,13 @@ export default {
   target: 'static',
 
   router: {
-    base: '/customer-resource-app/'
+    base: '/cra'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - app',
-    title: 'app',
+    titleTemplate: '%s | Customer Resource',
+    title: 'Customer Resource',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -73,7 +73,9 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'en',
+      theme_color: "#000000",
+      start_url: "/cra",
     }
   },
 

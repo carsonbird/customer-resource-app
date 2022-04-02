@@ -71,7 +71,7 @@
           <info-card path="steps/feel-felt-found-verbiage"></info-card>
           <info-card path="steps/dtm"></info-card>
           <info-card path="steps/contact-info"></info-card>
-          <info-card path="steps/service-preference"></info-card>
+          <info-card path="steps/identify-consult-preference"></info-card>
         </info-row>
         <info-row>
           <info-spacer></info-spacer>
@@ -117,17 +117,26 @@
           <info-card path="steps/send-samples"></info-card>
           <info-card path="steps/wait-x-time"></info-card>
         </info-row>
+        <info-row>
+          <info-card path="steps/they-buy-products"></info-card>
+        </info-row>
       </info-col>
     </section-container>
     <section-container name="Follow Up">
       <info-col>
         <info-row>
-          <info-card path="steps/followup-about-samples"></info-card>
+          <info-card path="steps/followup-about-products"></info-card>
           <info-card path="steps/invite-to-be-customer"></info-card>
         </info-row>
       </info-col>
     </section-container>
     <section-container name="Onboard">
+      <info-col>
+        <info-row>
+          <info-card path="steps/create-account"></info-card>
+          <info-card path="steps/identify-service-preference"></info-card>
+        </info-row>
+      </info-col>
       <info-col>
         <info-row>
           <info-card path="steps/full-consult"></info-card>
@@ -152,6 +161,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Flow"
+    }
+  },
   data() {
     return {
       sections: [

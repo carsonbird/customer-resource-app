@@ -1,7 +1,7 @@
 ---
 title: Exchange Contact Info
 to:
-  - service-preference
+  - identify-consult-preference
 ---
 
 If the individual you're looking to serve is open to supporting you, exchange contact info with them. You'll want to store this contact info in their <resource-chip path="resources/customer-profiles">Customer Profile</resource-chip>.

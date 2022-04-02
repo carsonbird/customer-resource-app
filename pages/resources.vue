@@ -9,8 +9,11 @@
       <v-row align="center">
         <v-col cols="12" sm="4" lg="3" xl="2" v-for="item in resources" :key="item.slug">
           <v-card class="rounded-lg" elevation="3" ripple @click="setDialogItem(item); openDialog()">
-            <!-- <v-img v-if="$vuetify.breakpoint.smAndUp" :src="item.image"></v-img> -->
+            <v-img v-if="$vuetify.breakpoint.mdAndUp" :src="item.image"></v-img>
             <v-list-item two-line>
+              <v-list-item-avatar v-if="$vuetify.breakpoint.smAndDown">
+                <v-img :src="item.image"></v-img>
+              </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title class="text-h6 text-wrap">{{item.title}}</v-list-item-title>
                 <!-- <v-list-item-subtitle>{{item.description}}</v-list-item-subtitle> -->
@@ -76,6 +79,11 @@ export default {
   //     resources
   //   }
   // },
+  head() {
+    return {
+      title: "Resources"
+    }
+  },
   data() {
     return {
       resources: null,
