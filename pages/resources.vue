@@ -9,9 +9,9 @@
       <v-row align="center">
         <v-col cols="12" sm="4" lg="3" xl="2" v-for="item in resources" :key="item.slug">
           <v-card class="rounded-lg" elevation="3" ripple @click="setDialogItem(item); openDialog()">
-            <v-img v-if="$vuetify.breakpoint.mdAndUp" :src="item.image"></v-img>
+            <v-img v-if="$vuetify.breakpoint.lgAndUp" :src="item.image"></v-img>
             <v-list-item two-line>
-              <v-list-item-avatar v-if="$vuetify.breakpoint.smAndDown">
+              <v-list-item-avatar tile v-if="$vuetify.breakpoint.mdAndDown && item.body.children.length > 0">
                 <v-img :src="item.image"></v-img>
               </v-list-item-avatar>
               <v-list-item-content>

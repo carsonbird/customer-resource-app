@@ -9,4 +9,6 @@ For your sphere of influence, you may create a themed card that includes a reque
 
 For your customers, you may include a generous thank you for supporting you in your business this year. Make sure to invite them to let you know how you can support them in the coming year.
 
+Additionally, you can create a <resource-chip path="resources/holiday-videos">Holiday Video</resource-chip> that accomplishes the same thing.
+
 <todo>Include examples of cards for each holiday.</todo>

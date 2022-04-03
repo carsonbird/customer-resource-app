@@ -12,13 +12,13 @@ export default {
   target: 'static',
 
   router: {
-    base: '/cra'
+    base: '/rra'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s | Customer Resource',
-    title: 'Customer Resource',
+    titleTemplate: '%s | Retail Resource',
+    title: 'Retail Resource',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -60,11 +60,11 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content',
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/axios',
+    '@nuxt/content',
+    // https://go.nuxtjs.dev/axios
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -73,9 +73,23 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
+      name: "Retail Resource App",
+      short_name: "RRA",
       lang: 'en',
+      start_url: "/rra",
       theme_color: "#000000",
-      start_url: "/cra",
+    },
+    meta: {
+      name: "Retail Resource App",
+      author: "AVEM",
+      description: "For organizing retail resources.",
+      nativeUI: true,
+      theme_color: "#000000",
+    },
+    icon: {
+      source: './static/icon.png',
+      sizes: [96, 128, 192, 256, 384, 512],
+      fileName: 'icon.png',
     }
   },
 
